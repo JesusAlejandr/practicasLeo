@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.reloj-digital {
+    font-size: 2em;
+}
+
+.reloj-analogico {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.horas, .minutos, .segundos {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    transform-origin: 0% 100%;
+}
+
+.horas {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.minutos {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.segundos {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.marcas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.marcas::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: black;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.marcas::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    background-color: black;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.marcas::before, .marcas::after {
+    display: block;
+    position: absolute;
+}

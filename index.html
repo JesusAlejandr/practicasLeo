@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Calificaciones</title>
+    <link rel="stylesheet" type="text/css" href="./css/pagina7.ccs">
+    <script type="text/javascript" src="./js/pagina7.js"></script>
+</head>
+<body>
+
+    <div class="contenedor-principal"> 
+        <nav id="titulo">Formulario de Calificaciones.</nav>
+
+<div class="formulario">
+    <h2 id="tituloForm"></h2>
+    <form>
+        <p>Matricula</p> <input type="text" id="matricula" class="cuadro">
+        <p>Nombre</p> <input type="text" id="nombre" class="cuadro">
+        <p>Materia 1</p> 
+        <select name="materia1" id="materia1" class="cuadro">
+            <option value="Espanol">Espanol</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Ingles">Ingles</option>
+        </select>
+        <p>Calificacion 1</p> <input type="text" id="calificacion1" class="cuadro">
+        <p>Materia 2</p> 
+        <select name="materia2" id="materia2" class="cuadro">
+            <option value="Espanol">Espanol</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Ingles">Ingles</option>
+        </select>
+        <p>Calificacion 2</p> <input type="text" id="calificacion2" class="cuadro">
+        <p>Materia 3</p>  
+        <select name="materia3" id="materia3" class="cuadro">
+            <option value="Espanol">Espanol</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Ingles">Ingles</option>
+        </select>
+        <p>Calificacion 3</p> <input type="text" id="calificacion3" class="cuadro">
+    </form>
+    <br><br>
+    <button type="button"  id="crearTablaContenido" onclick="crearTabla()">Enviar</button>
+</div>
+
+<table id="tablaContenido" border="1"></table>
+
+<footer>
+   
+</footer>
+
+</body>
+</html>

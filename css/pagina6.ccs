@@ -1,0 +1,69 @@
+*{
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Cambia a una fuente con asterisco es a todo */
+}
+
+
+#titulo {
+    color: black; /* da color a las letras*/
+    display: flex; /*ayuda a alinear, va junto con los 2 de abajo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background: yellow; /*cambia el fondo */
+    height: 15vh; /* da la altura a lo amarillo*/
+}
+
+
+
+body {
+    color: white; /* da color a las letras*/
+    background-color: black; /* Establece el color de fondo del body en negro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima del cuerpo para abarcar toda la altura de la ventana */
+}
+
+#tituloForm{
+    display: flex; /*ayuda a alinear, va junto con los 2 de abajo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.formulario {
+    width: 1400px; /* Ancho del formulario */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 30px; /* Hace que las esquinas sean redondeadas */
+    
+    
+}
+
+.formulario input, .formulario button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cuadro {
+    background-color: black; /* Cambia lightblue por el color que desees */
+}
+
+#botonSumnit{
+    background-color: yellow;
+}
+
+footer {
+    background-color: red; /* Color de fondo del footer */
+    color: white; /* Color del texto en el footer */
+    padding: 10px; /* Espaciado interior del footer */
+    margin-top: auto; /* Mueve el footer hacia abajo ocupando el espacio restante */
+    display: flex; /*ayuda a alinear, va junto con los 2 de abajo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 5vh; /* da la altura a lo amarillo*/
+}
