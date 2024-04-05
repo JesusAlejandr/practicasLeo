@@ -9,6 +9,7 @@ function actualizarRelojes() {
     relojDigital.innerText = `${horaDigital}:${minutoDigital}:${segundoDigital}`;
 
 
+
     const horas = fecha.getHours();
     const minutos = fecha.getMinutes();
     const segundos = fecha.getSeconds();
